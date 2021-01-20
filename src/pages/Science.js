@@ -106,6 +106,12 @@ class Science extends Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="footer">
+                <hr />
+                site coded by <b>xi chen</b>.<br />
+                <b>email me</b> chxchen at mit.edu
+                </div>
             </div>
         )
     }
