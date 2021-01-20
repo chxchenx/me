@@ -14,8 +14,8 @@ class NavBar extends Component {
                 <div className="title u-inlineBlock">chelsea chen</div>
                 <div className="linkContainer u-inlineBlock">
                     <Link to="/me">about.</Link>
-                    <Link to="/design">design.</Link>
-                    <Link to="/science">science.</Link>
+                    <Link to="/me/design">design.</Link>
+                    <Link to="/me/science">science.</Link>
                 </div>
             </nav>
         )

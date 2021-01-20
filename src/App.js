@@ -30,14 +30,14 @@ class App extends Component {
         <NavBar />
         <Router>
           <Design 
-            path="/design"
+            path="/me/design"
           />
           <ProjectSingularity
-            path="/design/singularity"
+            path="/me/design/singularity"
           />
 
           <Science 
-            path="/science"
+            path="/me/science"
           />
           <Skeleton
             path="/me"
