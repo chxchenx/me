@@ -1,0 +1,15 @@
+.projectCover {
+    margin: auto;
+    width: 80vw;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.projectCover img {
+    max-width: 80vw;
+}
+
+.headerBlurb a {
+    text-decoration: none;
+    color: var(--orange);
+}

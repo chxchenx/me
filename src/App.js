@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Router } from "@reach/router";
+import NotFound from "./pages/NotFound.js";
+import Skeleton from "./pages/Skeleton.js";
+import NavBar from "./modules/NavBar.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "../utilities.css";
+
+import Design from "./pages/Design.js";
+import Science from "./pages/Science.js";
+
+import ProjectSingularity from "./pages/Portfolio/ProjectSingularity.js";
+
+/**
+ * Define the "App" component as a class.
+ */
+class App extends Component {
+  // makes props available in this component
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {}
+
+  render() {
+    return (
+      <>
+        <NavBar />
+        <Router>
+          <Design 
+            path="/design"
+          />
+          <ProjectSingularity
+            path="/design/singularity"
+          />
+
+          <Science 
+            path="/science"
+          />
+          <Skeleton
+            path="/"
+          />
+          <NotFound default />
+        </Router>
+      </>
+    );
+  }
 }
 
 export default App;
