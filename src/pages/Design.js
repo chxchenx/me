@@ -26,7 +26,7 @@ class Design extends Component {
                 </div>
                 <div className="designBox">
                     <div className="designPreview">
-                        <Link to="/design/singularity" className="link">singularity web design</Link>
+                        <Link to="/me/design/singularity" className="link">singularity web design</Link>
                     </div>
                     <div className="designText">
                         <a href="https://singularity-app.herokuapp.com/">website</a> <a>january 2021</a><br />
