@@ -21,10 +21,18 @@ class Skeleton extends Component {
         <div className="headerBlurb">
         Hi! I'm <span className="name">Chelsea Chen</span>, a sophomore at the Massachusetts Institute of Technology passionate about science, tech, and design.
         </div>
-
-        <div className="linkBoxContainer">
-          <div className="linkBox"><a href="/">resume</a></div>
-          <div className="linkBox"><a href="/">portfolio</a></div>
+        <div className="mainBreak" />
+        <div className="mainBox">
+          <div className="mainFlex">
+            <div className="flexBox-a">
+              about
+            </div>
+            <div className="flexBox-b">
+              Hi, I'm Chelsea! I'm currently a sophomore at MIT studying CS, biology, and design. I'm super passionate and enjoy learning about science, technology, and design. I currently work with the Essigmann Lab at MIT's Department of Biological Engineering and Wave Learning Festival, a non-profit educational service, as a data analyst.
+              <br /><br />
+              I'm currently home in Indiana, where I'm working on personal design projects and preparing for the next semester. In my free time, you can probably find me either painting or learning dance covers. I always enjoy making connections, so if you have any questions about my work or just want to chat, feel free to reach out to me through email (chxchen at mit dot edu)!
+            </div>
+          </div>
         </div>
         <div className="mainBreak" />
         <div className="mainBox">
