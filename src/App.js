@@ -39,7 +39,7 @@ class App extends Component {
             path="/science"
           />
           <Skeleton
-            path="/"
+            path="/me"
           />
           <NotFound default />
         </Router>
