@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
+import ScrollToTop from "./modules/ScrollToTop.js";
+
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
 import NavBar from "./modules/NavBar.js";
@@ -28,20 +30,22 @@ class App extends Component {
       <>
         <NavBar />
         <Router>
-          <Design 
-            path="/design"
-          />
-          <ProjectSingularity
-            path="/design/singularity"
-          />
+          <ScrollToTop>
+            <Design 
+              path="/design"
+            />
+            <ProjectSingularity
+              path="/design/singularity"
+            />
 
-          <Science 
-            path="/science"
-          />
-          <Skeleton
-            path="/me"
-          />
-          <NotFound default />
+            <Science 
+              path="/science"
+            />
+            <Skeleton
+              path="/me"
+            />
+            <NotFound default />
+          </ScrollToTop>
         </Router>
       </>
     );
