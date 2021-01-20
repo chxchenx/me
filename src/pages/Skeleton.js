@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../modules/NavBar.js";
 import { Link } from "@reach/router";
 
-import "../../utilities.css";
+import "../utilities.css";
 import "./Skeleton.css";
 
 class Skeleton extends Component {
