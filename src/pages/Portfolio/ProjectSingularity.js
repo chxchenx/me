@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Portfolio.css";
-import cover from "../../../Images/singularity_preview.jpg"
-import prof from "../../../Images/singularity_prof.png"
+import cover from "../../Images/singularity_preview.jpg"
+import prof from "../../Images/singularity_prof.png"
 
 class ProjectSingularity extends Component {
     constructor(props) {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Design.css";
 import { Link } from "@reach/router";
 
-import preview1 from "../../Images/singularity_preview.jpg"
+import preview1 from "../Images/singularity_preview.jpg"
 
 class Design extends Component {
     constructor(props) {
