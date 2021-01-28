@@ -1,0 +1,394 @@
+/* Import Josefin Sans and Nunito Sans. */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;1,300;1,600&family=Nunito+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
+:root {
+  --primary: #4F6D7A;
+  --primary--dim: #C0D6DF;
+  --orange: #DD6E42;
+  --cream: #E8DAB2;
+  --grey: #EAEAEA;
+  --white: #fff;
+
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 24px;
+}
+
+.container {
+    padding: var(--l);
+    background-color: var(--primary);
+}
+
+.title {
+    font-family: Josefin Sans;
+    font-size: 28pt;
+    font-weight: bold;
+    color: var(--cream);
+}
+
+.linkContainer {
+    margin-left: var(--l);
+}
+
+.linkContainer a {
+    text-decoration: none;
+    color: var(--cream);
+    padding: var(--s);
+}
+
+.linkContainer a:hover {
+    opacity: 0.8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+form {
+  flex-grow: 1;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-flex-justifyCenter {
+  justify-content: center;
+}
+
+.u-flex-alignCenter {
+  align-items: center;
+}
+
+.u-inlineBlock {
+  display: inline-block;
+}
+
+.u-bold {
+  font-weight: 600;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.u-relative {
+  position: relative;
+}
+
+.u-pointer {
+  cursor: pointer;
+}
+
+.u-link {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.u-link:hover {
+  color: var(--primary--dim);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.headerBlurb {
+    width: 80vw;
+    margin: auto;
+    padding: var(--l);
+    font-family: Nunito Sans;
+    font-size: 25pt;
+    margin-top: 50px;
+    color: var(--primary);
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+}
+
+.name {
+    background-color: var(--cream);
+    padding: 0px var(--s);
+}
+
+.name:hover {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+.linkBoxContainer {
+    display: flex;
+    margin: auto;
+    width: 70vw;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.linkBox {
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    background-color: var(--cream);
+    margin: auto;
+    padding: 2vh 5vw;
+    font-weight: bold;
+}
+
+.linkBox a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.linkBox:hover {
+    background-color:#e0c884;
+}
+
+.mainBox {
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mainFlex {
+    display: flex;
+}
+
+.flexBox-a {
+    width: 25vw;
+    font-family: Josefin Sans;
+    font-size: 15pt;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.flexBox-b {
+    width: 50vw;
+    color: var(--primary);
+}
+
+.flexBox-b a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.flexBox-b a:hover {
+    font-weight: bold;
+}
+
+.flexBox-b b {
+    color: var(--orange);
+    font-family: Josefin Sans;
+}
+
+.flexSpan {
+    width: 245px;
+    display: inline-block;
+    font-family: Josefin Sans;
+    font-size: 16pt;
+    padding: 5px 0px;
+}
+
+.flexSpan-full {
+    display: inline-block;
+    font-family: Josefin Sans;
+    font-size: 16pt;
+    padding: 5px 0px;
+}
+
+.flexSpan:hover {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.flexSpan-full:hover {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+footer {
+    padding: 5vh 15vw;
+    text-align: center;
+}
+
+footer b {
+    color: var(--orange);
+    font-family: Josefin Sans;
+}
+
+.mainBreak {
+    border-top: 5px solid var(--orange);
+    width: 80vw;
+    margin: auto;
+}
+
+.highlight:hover {
+    color: var(--orange);
+}
+
+/* */ /* */ /* */
+
+.designCover {
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: none;
+    height: 350px;
+    border: 1px solid var(--primary);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.designBox {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    border: 1px solid var(--primary);
+}
+
+.designPreview {
+    background-color: var(--primary);
+    width: 20vw;
+    margin-top: -0.5px;
+    margin-left: -0.5px;
+    border: 1px solid var(--primary);
+
+    font-size: 15pt;
+    font-family: Josefin Sans;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 2vw;
+    padding-right: 2vw
+}
+
+.designPreview a {
+    text-decoration: none;
+}
+
+.designText {
+    width: 46vw;
+    align-items: center;
+    font-size: 11pt;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: var(--primary);
+    text-align: left;
+}
+
+.designText a {
+    text-decoration: none;
+    color: var(--orange);
+    padding: 0px 5px;
+    background-color: var(--cream);
+    line-height: 25px;
+}
+
+.designText a:hover {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--cream);
+}
+
+.link:hover  {
+    font-weight: bold;
+}
+
+.headerBlurb a {
+    text-decoration: none;
+    color: var(--orange);
+    padding: 0px 5px;
+    background-color: var(--cream);
+    line-height: 25px;
+}
+
+.headerBlurb a:hover {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Josefin Sans;
+    color: var(--orange);
+    font-weight: bold;
+    margin: 0px;
+}
+
+.subheading {
+    color: var(--primary);
+    font-size: 11pt;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.subheading:hover {
+    background-color: var(--cream);
+}
