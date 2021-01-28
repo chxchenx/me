@@ -12,6 +12,8 @@ import Science from "./pages/Science.js";
 
 import ProjectSingularity from "./pages/Portfolio/ProjectSingularity.js";
 
+import Portfolio from "./pages/Portfolio/Portfolio_XiChen.pdf";
+
 /**
  * Define the "App" component as a class.
  */
@@ -42,6 +44,11 @@ class App extends Component {
           <Skeleton
             path="/me"
           />
+
+          <Portfolio
+            path="/me/design/portfolio"
+          />
+
           <NotFound default />
         </Router>
       </>
